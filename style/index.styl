@@ -234,12 +234,16 @@
     text-align center
     box-shadow inset 0px 2px 18px 0px rgba(46, 43, 43, 0.63)
     
+    background  linear-gradient(135deg, rgba(84,114,210,.4) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%), 
+        url('../img/header-bg.png') bottom 10% right 10%, 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(70, 70, 70, 0.6)), 
+        url('../img/header-img.png'), 
+        url('../img/header-bg.jpg')
     background-color #ddd
-    background-image  linear-gradient(135deg, rgba(84,114,210,.4) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(70, 70, 70, 0.6)), url('../img/header-img.png'), url('../img/header-bg.jpg')
-    // background-position top right 10px, bottom left
-    background-repeat no-repeat, no-repeat, repeat, no-repeat
-    background-size auto, auto, auto, cover
-    background-attachment scroll, scroll , fixed , fixed
+    // background-position unset, unset, bottom right, unset, unset
+    background-repeat no-repeat, no-repeat, no-repeat, repeat, no-repeat
+    background-size auto, auto, auto, auto, cover
+    background-attachment scroll, scroll , fixed , fixed, fixed
     height auto
     height 100vh
     min-height 500px
@@ -588,9 +592,10 @@
         line-height 1.4em
         color #565656
         margin auto
-        background url('../img/docs-bg.jpg') no-repeat center right
+        background url('../img/docs-bg.jpg') no-repeat center
         //background-size 100%
         padding-left 25px
+        background-size 167px
         &
             li
                 margin-bottom 10px
@@ -625,6 +630,12 @@
         margin-top 20px
      
 .reviews
+    ol, ul
+        font-size 16px
+        line-height 1.4em
+        color #565656
+    li
+        margin-bottom 10px
     position relative
     width 100%
     background #fff url('../img/reviews-bg.jpg') no-repeat
@@ -645,7 +656,7 @@
         padding-left 3px
         padding-right 3px
     &__title
-        font-size 28px 
+        font-size 20px 
         line-height 1.2em
         color #000
         text-align center

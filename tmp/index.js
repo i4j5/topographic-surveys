@@ -129,7 +129,7 @@ $(document).ready(function () {
 					} else {
 						$('#modal__ok').openModal();
 					}
-					yaCounter51499229.reachGoal(yatarget);
+					yaCounter51918635.reachGoal(yatarget);
 					yatarget = 'order';
 				}).always(function () {
 					//btn.val(btnText)
