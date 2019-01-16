@@ -31,7 +31,7 @@ html(lang="ru")
 head
   meta(charset="UTF-8")
   meta(name="viewport" content="width=device-width, initial-scale=1")
-  title Разрешение на строительство
+  title Топографическая съемка
 
   link(rel="icon" href="img/favicon.ico" type="image/x-icon")
   link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
@@ -72,7 +72,7 @@ body.page
   .header
     .container
       .offer 
-        .offer__text.start-animate <span>Разрешение на строительство </span><br> в Ростове-на-Дону и Ростовской области
+        .offer__text.start-animate <span>Топографическая съемка </span><br> в Ростове-на-Дону и Ростовской области
         .offer__action.order.start-animate(style="animation-delay: .2s") Получить бесплатную консультацию
 
   .froze
@@ -94,9 +94,82 @@ body.page
             input(type="hidden" name="order" value="Технический паспорт. Консультация по документам")
             input(type='submit' value='Получить консультацию по документам').form__btn
   div(style="width: 100%;background: radial-gradient(circle,#52495d 61%,#5d516c 83%) #52495d;padding: 40px;color: #fff;font-size: 18px;")
-    .container с 08.10.2018г. согласно ст. 51.1 Градостроительного кодекса для строительства инживидуального жилого дома необходимо предоставить УВЕДОМЛЕНИЕ О НАЧАЛЕ СТРОИТЕЛЬСТВА. После чего, дождавшись 7 дней, и получив уведомление от администрации о соответствии параметров обязательным требованиям. 
+    .container
+      p Топографическая съемка масштабов 1:500 – 1:5000 (со всеми наземными и подземными коммуникациями и сооружениями), согласованную с эксплуатирующими организациями.
+      br
+      p Исполнительная съемка инженерных коммуникаций, благоустройства территории.
+      br
+      p Геодезические разбивочные работы: перенос объекта в натуру в соответствии с проектом (разбивочные оси зданий, границы земельных участков).
+  
+  .container
+    +b.title
+      +e.wrap
+        +e.text Процесс топографической съемки
 
-  //.triggers
+    +b.tabs
+        +e.item._active
+          +e.title
+            +e.number 1
+            |Топографическая съемка проводится геодезистами. Они выезжают на объект, снимают местность с учетом наземных и подземных коммуникаций.
+        +e.item._active
+          +e.title
+            +e.number 2
+            |После этого топографическую карту необходимо согласовать в Департаменте Архитектуры и Градостроительства, где и ставится мокрая печать – принято в ИСОГД.
+        +e.item._active
+          +e.title
+            +e.number 3
+            |Ситуационный план изображается прямо на странице с топографической съемкой.
+        +e.item._active
+          +e.title
+            +e.number 4
+            |Данный документ нужен для того, чтобы инженеры эксплуатирующих организаций (Водоканал, Горгаз, ДонЭнерго) имели представление о том, как проходят коммуникации близ подключаемого объекта, чтобы выдать точку подключения и технические условия в целом.
+        +e.item._active
+          +e.title
+            +e.number 5
+            |А в дальнейшем данный документ необходим для проектирования сети. Топографическая съемка является основой «полем» для проектирования.
+
+  .container
+    +b.title
+      +e.wrap
+        +e.text Топографическая съемка включает в себя:
+    .p сбор исходных данных;
+    .p создание топографических планов в электронном виде;
+    .p обновление, а также создание топографических планов, которые предназначены для разработки различной проектной документации по участкам городской застройки, отдельным объектам строительства, трассам инженерных сетей;
+    .p съемка надземных и подземных сооружений для будущей разработки проектов строительства объектов разного назначения.
+
+
+  .froze
+    .container
+      .froze__container
+        .froze__action ЗАПИШИТЕСЬ НА БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ СПЕЦИАЛИСТА ПО ОФОРМЛЕНИЮ ДОКУМЕНТОВ
+        .froze__description Заполните форму, и специалист свяжется с Вами в течение 20 минут
+        +b.form
+          form.ajax
+            input(placeholder='Введите Ваше имя' name='name').input.input_type_name
+            input(placeholder='Введите Ваш телефон' name='phone').input.input_type_phone
+            |<input type="hidden" name="url" value="<?echo $url?>"/>
+            |<input type="hidden" name="utm" value="<?echo $utm?>"/>
+            |<input type="hidden" name="utm_term" value="<?echo $utm_term?>"/>
+            |<input type="hidden" name="utm_campaign" value="<?echo $utm_campaign?>"/>
+            |<input type="hidden" name="utm_source" value="<?echo $utm_source?>"/>
+            |<input type="hidden" name="utm_medium" value="<?echo $utm_medium?>"/>
+            |<input type="hidden" name="utm_content" value="<?echo $utm_content?>"/>
+            input(type="hidden" name="order" value="Технический паспорт. Консультация по документам")
+            input(type='submit' value='Получить консультацию по документам').form__btn
+   div(style="width: 100%;background: radial-gradient(circle,#52495d 61%,#5d516c 83%) #52495d;padding: 30px 0 40px 0;color: #fff;font-size: 18px;")
+    .container
+      p(style="font-size: 25px; margin-bottom: 35px; text-align: center") Сроки выполнения работы
+      p Сроки получения архивной топографической карты от <b>2 часов.</b>
+      br
+      p Срок изготовление топографической съемки с согласованием Департаменте Архитектуры и Градостроительства от <b>7 рабочих дней.</b>
+
+  //- .container
+  //-   +b.title
+  //-     +e.wrap
+  //-       +e.text Стоимость выполнения работ
+  //-   .p Изготовление топографическая сьемка с согласованием в Департаменте Архитектуры и Градостроительства от <b>6000 руб.</b> (рассчитывается индивидуально исходя из площади съемки, масштаба, а так же целей ее проведений).
+
+  //-.triggers
     .container
       .row
         +b.col._lg_3._md_3._sm_6._xs_6
@@ -115,7 +188,7 @@ body.page
           .triggers__items(style="animation-delay: .4s").start-animate
             img(src='img/triggers__img2.png').triggers__img
             .triggers__text Вносим корректировки <br>бесплатно
-  //.container
+  //-.container
     +b.title
       +e.wrap
         +e.text Процесс изготовления технического паспорта
@@ -135,7 +208,7 @@ body.page
           +e.number 3
           |Согласование с компетентными органами
 
-  //.docs
+  //-.docs
     .container
       +b.title
         +e.wrap
@@ -167,7 +240,7 @@ body.page
         //-         input(type='submit' value='Получить список документов').form__btn
     //-+b.btn_style_blue Оставить заявку на консультацию инженера
 
-  .reviews
+  //-.reviews
     .container
       .row
         +b.col._lg_5._md_5._sm_12._xs_12
@@ -368,7 +441,7 @@ body.page
         +b.col._lg_3._lg-offset_1
           .scheme__item.scheme__item_step_5(style="animation-delay: 2s").start-animate
             .scheme__title Осуществление работ
-            .scheme__text Мы предоставляем вам уведомление о выполнении требований на строительство
+            .scheme__text Мы предоставляем вам согласованную топографическую съемку
       .scheme__progress-bar
       .row
         +b.col._lg_5
@@ -404,7 +477,7 @@ body.page
         +b.col._sm_6
           .scheme__item.scheme__item_step_5
             .scheme__title Осуществление работ
-            .scheme__text Мы предоставляем вам уведомление о выполнении требований на строительство
+            .scheme__text Мы предоставляем вам согласованную топографическую съемку
   
 
   .questions
@@ -496,8 +569,8 @@ body.page
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    ym(51929444, "init", {
-    id:51929444,
+    ym(51931961, "init", {
+    id:51931961,
     clickmap:true,
     trackLinks:true,
     accurateTrackBounce:true,
@@ -505,4 +578,5 @@ body.page
     });
   noscript
     div
-      img(src='https://mc.yandex.ru/watch/51929444', style='position:absolute; left:-9999px;', alt='')
+      img(src='https://mc.yandex.ru/watch/51931961', style='position:absolute; left:-9999px;', alt='')
+

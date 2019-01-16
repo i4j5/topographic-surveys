@@ -494,7 +494,7 @@
 
 //ТАБЫ - Этапы подключения
 .tabs
-    max-width 690px
+    max-width 1100px
     margin auto
     ul, ol
         padding-left 30px
@@ -1090,3 +1090,35 @@
 
 .modal-open
     overflow hidden
+    
+.p
+    margin auto
+    margin-bottom 35px
+    max-width 1000px
+    font-size 16px
+    line-height 1.6em
+    position relative
+    padding-left 25px
+    &::before
+        position absolute
+        display inline-block
+        vertical-align middle
+        width 0
+        height 100%
+        content '✔'
+        font-size 20px
+        line-height 20px
+        width 24px
+        height 24px
+        left 0px
+        color #39b72a
+    // &::after
+    //     position absolute
+    //     display inline-block
+    //     vertical-align middle
+    //     width 0
+    //     height 100%
+    //     content ''
+    //     width 20px
+    //     height 20px
+    //     
