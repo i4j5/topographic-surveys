@@ -135,7 +135,7 @@ $(document).ready(()=>{
 	           } else {
            			$('#modal__ok').openModal()
 	           }
-	           yaCounter51918635.reachGoal(yatarget)
+	           yaCounter51929444.reachGoal(yatarget)
 	           yatarget = 'order'
 	        })
 	        .always(function() {
